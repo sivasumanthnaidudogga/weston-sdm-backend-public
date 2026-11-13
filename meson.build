@@ -2,6 +2,8 @@ if not get_option('backend-sdm')
 	subdir_done()
 endif
 
+subdir('qcom-clients')
+
 srcs_drm = [
 	'sdm.c',
 	'fb.c',
